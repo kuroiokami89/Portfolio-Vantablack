@@ -1,0 +1,75 @@
+<div id="about" data-aos="fade-up">
+  <div class="about-container">
+    <div class="about-title">
+      <h1 class="about-animated"></h1>
+      <span class="about-span-animated"></span>
+    </div>
+    <div class="about-me" data-aos="fade-up">
+      <div
+        class="about-img"
+        style="background-image: url('pics/profile-pic.jpg')"
+      >
+        <!-- <img class="me-img" src="pics/profile-pic.jpg"/> -->
+      </div>
+      <p>
+        Hey, my name is AllushAj sergio and i use vAntablAck as my nickname
+        across social media. i’m a junior web developer with experience in html,
+        CSS, JS, php, React, and sql.
+      </p>
+      <button class="btn-3" href="styles/files/CV SA 2023.pdf" download>
+        downloAd my resume
+      </button>
+    </div>
+  </div>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"
+></script>
+<script>
+  $(document).ready(function () {
+    createFiniteTypewriterEffect(
+      ".about-animated",
+      ["hi, i'm sergio Allushaj Web developer"],
+      200
+    );
+    // createFiniteTypewriterEffect(".about-span-animated", ["front end developer / javascript fAn / wordpress expert"], 800);
+  });
+  $(window).on("load", function () {
+    var fadeContainer = $(".about-me");
+
+    var options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5, // Adjust the threshold as needed
+    };
+
+    var observer = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          // Set a timeout to delay the fade-in effect
+          setTimeout(function () {
+            // Fade out the image
+            fadeContainer
+              .find(".about-img")
+              .animate({ opacity: 0 }, 1000, function () {
+                // Callback function to hide the image after fade-out
+                $(this).hide();
+              });
+
+            // Fade in the rest of the content
+            fadeContainer.find("p, .resume").animate({ opacity: 1 }, 1000);
+          }, 2000); // Adjust the delay time as needed
+
+          // Stop observing once the content is visible
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+
+    // Start observing the target element
+    observer.observe(fadeContainer[0]);
+  });
+</script>

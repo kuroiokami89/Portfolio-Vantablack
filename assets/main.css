@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  scroll-behavior: initial;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Major Mono Display", monospace !important;
+  color: #fff;
+  background: black;
+  width: 100%;
+  min-height: 100%;
+}
+
+::selection {
+  background-color: #faf9f6; /* Set the background color */
+  color: #000; /* Set the text color */
+}
+
+/* For older browsers */
+::-moz-selection {
+  background-color: #faf9f6;
+  color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Major Mono Display", monospace !important;
+}
+
+.blocco {
+  margin-bottom: 100px !important;
+}
+
+.link {
+  position: relative;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.link:hover::before {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+/** Inizio Stili Globali **/
+a {
+  text-decoration: unset !important;
+  position: relative;
+  text-decoration: none;
+}
+
+p {
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.7rem;
+}
+
+h2 {
+  font-size: 45px !important;
+}
+/** FINE STILI GLOBALI **/
+
+/** INZIO STILE HEADER **/
+#header {
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.header-container {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 13%; /* Adjust this value as needed */
+  padding-top: 50px;
+}
+
+.header-anchors {
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  column-gap: 30px;
+  row-gap: 8px;
+}
+
+.header-anchors a {
+  transform: translate3d(0%, 0px, 0px);
+  opacity: 0.6;
+  transition: color 1.25s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.4s linear,
+    transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.header-anchors a:hover {
+  opacity: 1;
+  transition: color 1.25s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.4s linear,
+    transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#name {
+  font-size: 1.5rem;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.header-fixed-style {
+  backdrop-filter: blur(10px);
+  will-change: background;
+  background-color: rgba(234, 234, 234, 0.106);
+}
+/** FINE STILE HEADER **/
+
+/** INIZIO STILE FOOTER **/
+#footer {
+  font-size: 1.3rem;
+  padding: 70px 200px;
+}
+
+#footer a {
+  cursor: pointer;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.footer-socials {
+  display: flex;
+  column-gap: 50px;
+}
+/** FINE STILE FOOTER **/
+
+/** INIZIO STILE ABOUT **/
+
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin: 0 200px;
+}
+
+#about h1 {
+  font-size: 5rem;
+  margin: 0;
+  line-height: 6.5rem;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  margin: 0 100px;
+  overflow: hidden;
+}
+
+.about-container div {
+  flex: 0 0 50%;
+}
+
+.resume {
+  font-size: 2rem;
+  padding: 15px 0;
+  opacity: 0; /* Initially set opacity to 0 */
+  transition: opacity 1s ease-in-out; /* Added transition for opacity */
+}
+
+.about-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.me-img {
+  display: none;
+}
+
+.about-me {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.about-me p {
+  margin: 0 80px;
+}
+
+.about-me .link {
+  font-size: 1.5rem;
+  margin: 0;
+}
+/** FINE STILE ABOUT **/
+
+/** STILE PROJECTS **/
+#projects {
+  display: flex;
+  flex-direction: column;
+  padding: 0 300px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  column-gap: 80px;
+}
+
+.project-list-left,
+.project-list-right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 200px;
+}
+
+.project-list-right {
+  margin-top: 400px;
+}
+
+#projects .title-work {
+  margin-bottom: 100px;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.project-text a {
+  width: fit-content;
+}
+
+.project-img {
+  width: 600px;
+  height: 750px;
+  background-position: center;
+  background-size: cover;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.project {
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0.5 !important;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.project:hover {
+  opacity: 1 !important;
+}
+/** FINE STILE PROJECTS **/
+
+/** INIZIO STILE SKILLS **/
+#skills {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 300px;
+  text-align: center;
+}
+
+.skills-text {
+  text-align: left;
+}
+
+#skills p,
+#skills h2 {
+  margin: 0 200px;
+}
+
+.tech-list {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 150px;
+  justify-content: center;
+}
+
+.tech-list i {
+  font-size: 3.5rem;
+}
+
+/** FINE STILE SKILLS **/
