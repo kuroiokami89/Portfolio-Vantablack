@@ -64,11 +64,6 @@ h6 {
   font-family: "Major Mono Display", monospace !important;
 }
 
-a {
-  font-size: 1.3rem;
-  font-family: "Adam-medium" !important;
-}
-
 .blocco {
   margin-bottom: 100px !important;
 }
@@ -97,13 +92,17 @@ a {
 
 /** Inizio Stili Globali **/
 a {
+  font-size: 1.4rem;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 100;
   text-decoration: unset !important;
   position: relative;
   text-decoration: none;
 }
 
 p {
-  font-family: "Adam-medium";
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 100;
   font-size: 1.7rem;
 }
 
