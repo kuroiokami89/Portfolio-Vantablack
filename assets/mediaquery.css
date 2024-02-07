@@ -335,4 +335,8 @@
   #text2 {
     font-size: 2rem !important;
   }
+
+  #footer {
+    height: 100vh !important;
+  }
 }
