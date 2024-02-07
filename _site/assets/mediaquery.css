@@ -322,16 +322,11 @@
 }
 
 @media screen and (max-width: 480px) {
-  .header-links img {
-    max-width: 34px;
-  }
-
-  #text1,
-  #text2 {
-    font-size: 2rem !important;
-  }
-
   #footer {
     height: 100vh !important;
+  }
+
+  #skills.blocco {
+    margin-bottom: 0 !important;
   }
 }
