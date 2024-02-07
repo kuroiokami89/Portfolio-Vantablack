@@ -12,12 +12,12 @@
 
 @font-face {
   font-family: "Adam-medium";
-  src: url("{{ site.baseurl }}/assets/Adam-medium.woff");
+  src: url("../assets/Adam-medium.woff");
 }
 
 @font-face {
   font-family: "Adam-bold";
-  src: url("{{ site.baseurl }}/assets/Adam-Bold.woff");
+  src: url("../assets/Adam-Bold.woff");
 }
 
 /* FINE FONTS */
