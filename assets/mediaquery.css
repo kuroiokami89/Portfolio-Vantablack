@@ -259,6 +259,10 @@
     text-align: left;
   }
 
+  .about-container div {
+    flex: 0;
+  }
+
   .foot-info {
     text-align: center;
   }
@@ -285,6 +289,11 @@
     flex-direction: column;
     align-items: center;
     row-gap: 30px;
+  }
+
+  #skills {
+    justify-content: center;
+    row-gap: 50px;
   }
 
   #skills p {
