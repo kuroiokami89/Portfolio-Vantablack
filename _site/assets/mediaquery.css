@@ -298,17 +298,12 @@
     row-gap: 50px;
   }
 
+  #skills.blocco {
+    margin-bottom: 0 !important;
+  }
+
   #skills p {
     margin: 0;
-  }
-
-  #text1,
-  #text2 {
-    font-size: 4rem !important;
-  }
-
-  #email-bar {
-    padding: 150px;
   }
 
   .tech-list {
@@ -334,5 +329,9 @@
   #text1,
   #text2 {
     font-size: 2rem !important;
+  }
+
+  #footer {
+    height: 100vh !important;
   }
 }
