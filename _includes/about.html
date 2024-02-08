@@ -11,30 +11,34 @@
       >
         <!-- <img class="me-img" src="pics/profile-pic.jpg"/> -->
       </div>
-      <p>
-        I’m a junior web developer with experience in HTML, CSS, JS, PHP, REACT,
-        and SQL.
-      </p>
-      <button class="cv-button" href="styles/files/CV SA 2023.pdf" download>
-        DOWNLOAD CV
-      </button>
     </div>
   </div>
 </div>
+
+<style>
+  /* Aggiungi questo stile per l'immagine */
+  .about-img {
+    opacity: 0; /* Rendi l'immagine trasparente all'inizio */
+    transition: opacity 3s; /* Imposta la transizione di opacità */
+    transition-delay: 2s; /* Imposta il ritardo della transizione */
+  }
+</style>
 
 <script
   src="https://code.jquery.com/jquery-3.7.1.js"
   integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
   crossorigin="anonymous"
 ></script>
+<script src="https://cdn.jsdelivr.net/gh/mattboldt/typed.js/lib/typed.min.js"></script>
 <script>
   $(document).ready(function () {
-    createFiniteTypewriterEffect(
-      ".about-animated",
-      ["hi, i’m sergio Allushaj, a web developer"],
-      200
-    );
-    // createFiniteTypewriterEffect(".about-span-animated", ["front end developer / javascript fAn / wordpress expert"], 800);
+    // Use Typed.js instead
+    var typed = new Typed(".about-animated", {
+      strings: ["hi, i’m sergio Allushaj, a web developer"],
+      typeSpeed: 150,
+      loop: false,
+      showCursor: false,
+    });
   });
   $(window).on("load", function () {
     var fadeContainer = $(".about-me");
@@ -50,17 +54,12 @@
         if (entry.isIntersecting) {
           // Set a timeout to delay the fade-in effect
           setTimeout(function () {
-            // Fade out the image
-            fadeContainer
-              .find(".about-img")
-              .animate({ opacity: 0 }, 1000, function () {
-                // Callback function to hide the image after fade-out
-                $(this).hide();
-              });
+            // Fade in the image
+            fadeContainer.find(".about-img").css("opacity", "1");
 
-            // Fade in the rest of the content
-            fadeContainer.find("p, .resume").animate({ opacity: 1 }, 1000);
-          }, 2000); // Adjust the delay time as needed
+            // Fade out the rest of the content
+            // fadeContainer.find(".about-img").animate({ opacity: 0 }, 1000);
+          }, 6500); // Adjust the delay time as needed
 
           // Stop observing once the content is visible
           observer.unobserve(entry.target);

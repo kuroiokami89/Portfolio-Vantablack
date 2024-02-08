@@ -8,20 +8,6 @@
   scroll-behavior: initial;
 }
 
-/* FONTS */
-
-@font-face {
-  font-family: "Adam-medium";
-  src: url("../assets/Adam-medium.woff");
-}
-
-@font-face {
-  font-family: "Adam-bold";
-  src: url("../assets/Adam-Bold.woff");
-}
-
-/* FINE FONTS */
-
 html {
   overflow: scroll;
   overflow-x: hidden;
