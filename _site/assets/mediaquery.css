@@ -317,6 +317,10 @@
   #projects {
     margin: 0;
   }
+
+  #projects.blocco {
+    margin-bottom: 0 !important;
+  }
 }
 
 @media screen and (max-width: 480px) {
