@@ -200,6 +200,10 @@
   #skills h2 {
     margin: 0;
   }
+
+  .tech-list i {
+    font-size: 3rem !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
