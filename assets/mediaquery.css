@@ -219,13 +219,13 @@
 
   h2,
   h3 {
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
     line-height: unset;
     margin-bottom: 20px !important;
   }
 
-  h3 {
-    font-size: 2rem !important;
+  p {
+    font-size: 1.5rem;
   }
 
   .header-anchors {
@@ -297,14 +297,14 @@
 
   #skills {
     justify-content: center;
-    row-gap: 50px;
   }
 
   #skills.blocco {
     margin-bottom: 0 !important;
   }
 
-  #skills p {
+  #skills p,
+  .about-me p {
     margin: 0;
   }
 
@@ -312,10 +312,6 @@
     margin-top: 50px;
     row-gap: 40px;
     column-gap: 40px;
-  }
-
-  .about-me p {
-    margin: 0;
   }
 
   #projects {

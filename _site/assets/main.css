@@ -188,7 +188,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  margin: 0 200px;
+  margin: 0 13%;
 }
 
 #about h1 {
@@ -200,7 +200,6 @@ h2 {
 .about-container {
   display: flex;
   align-items: center;
-  margin: 0 100px;
   overflow: hidden;
 }
 
