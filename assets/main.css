@@ -317,13 +317,20 @@ p {
 /** INIZIO STILE SKILLS **/
 #skills {
   display: flex;
-  flex-direction: column;
   padding: 100px 0;
   text-align: center;
 }
 
+#skills div {
+  flex: 0 0 50%;
+}
+
 .skills-text {
   text-align: left;
+}
+
+.skills-text p {
+  margin-right: 105px;
 }
 
 .tech-list {
