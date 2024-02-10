@@ -206,13 +206,6 @@ p {
   flex: 0 0 50%;
 }
 
-.resume {
-  font-size: 2rem;
-  padding: 15px 0;
-  opacity: 0; /* Initially set opacity to 0 */
-  transition: opacity 1s ease-in-out; /* Added transition for opacity */
-}
-
 .about-img {
   background-size: cover;
   background-repeat: no-repeat;
@@ -220,10 +213,6 @@ p {
   position: absolute;
   width: 100%;
   height: 100%;
-}
-
-.me-img {
-  display: none;
 }
 
 .about-me {
@@ -243,19 +232,6 @@ p {
 
 .about-me p {
   margin: 0 80px;
-}
-
-.about-me .link {
-  font-size: 1.5rem;
-  margin: 0;
-}
-
-.cv-button {
-  font-family: "Adam-medium";
-  font-size: 1.7rem;
-  padding: 20px;
-  background: #000;
-  color: #fff;
 }
 /** FINE STILE ABOUT **/
 

@@ -50,23 +50,8 @@
 }
 
 @media screen and (max-width: 1024px) {
-  body {
-    scroll-snap-type: none; /* Disable snap scroll for mobile devices */
-    height: auto;
-  }
-
-  .home {
-    height: auto; /* Remove the fixed height for sections on mobile devices */
-    width: auto; /* Remove the minimum height for sections on mobile devices */
-    scroll-snap-align: none; /* Remove snap alignment for mobile devices */
-  }
-
   h1 {
     font-size: 3.5rem !important;
-  }
-
-  .arrow-down {
-    left: unset;
   }
 
   #header {
@@ -101,15 +86,6 @@
 
   #works {
     padding: 50px 30px;
-  }
-
-  .home-text {
-    padding: 0;
-    flex-direction: column-reverse;
-  }
-
-  .home-text img {
-    width: 100%;
   }
 
   .header-links img {
@@ -194,10 +170,6 @@
     justify-content: center;
   }
 
-  .home-text {
-    padding: 30px;
-  }
-
   #about {
     margin-top: 0;
   }
@@ -219,14 +191,6 @@
 
   .about-container div {
     flex: auto;
-  }
-
-  .foot-info {
-    text-align: center;
-  }
-
-  .header-links img {
-    max-width: 40px;
   }
 
   #footer {
