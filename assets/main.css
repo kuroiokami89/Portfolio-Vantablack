@@ -328,3 +328,27 @@ p {
 }
 
 /** FINE STILE SKILLS **/
+
+/** INIZIO STILE WORKS **/
+
+.work-exp {
+  margin-bottom: 80px;
+}
+
+.work-exp p {
+  font-size: 1.55rem;
+  margin-right: 500px;
+}
+
+.work-list {
+  border-left: 1px solid;
+  margin-top: 60px;
+}
+
+.square {
+  height: 10px;
+  width: 10px;
+  background-color: #fff;
+}
+
+/** FINE STILE WORKS **/
