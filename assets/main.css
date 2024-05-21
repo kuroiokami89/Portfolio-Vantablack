@@ -336,7 +336,7 @@ p {
 /** INIZIO STILE WORKS **/
 
 .work-list {
-  border-left: 2px solid white; /* Change the border style and color as needed */
+  border-left: 1px solid white; /* Change the border style and color as needed */
   margin-top: 60px;
   position: relative;
 }
@@ -344,7 +344,7 @@ p {
 .work-exp {
   position: relative;
   margin-bottom: 80px;
-  padding-left: 20px; /* Add padding to align the content */
+  padding-left: 30px; /* Add padding to align the content */
 }
 
 .square {
