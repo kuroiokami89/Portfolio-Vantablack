@@ -54,6 +54,10 @@ h2 {
   font-size: 45px !important;
 }
 
+h3 {
+  font-size: 25px !important;
+}
+
 .blocco {
   margin-bottom: 100px !important;
   margin: 0 13%;
@@ -354,12 +358,12 @@ p {
 
 .work-exp time {
   display: block;
-  font-size: 1rem;
+  font-size: 1.15rem;
   color: white;
+  margin-bottom: 20px;
 }
 
 .work-exp h3 {
-  font-size: 1.25rem;
   margin: 5px 0;
 }
 
