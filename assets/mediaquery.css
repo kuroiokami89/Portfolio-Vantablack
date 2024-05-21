@@ -47,6 +47,10 @@
     width: 500px;
     height: 650px;
   }
+
+  .work-exp p {
+    margin-right: 200px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
