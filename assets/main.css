@@ -255,6 +255,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 40px;
 }
 
 .project-list-left,
@@ -275,6 +276,7 @@ p {
 .project-text {
   display: flex;
   flex-direction: column;
+  margin-top: 15px;
 }
 
 .project-text a {
@@ -337,7 +339,7 @@ p {
 
 .work-list {
   border-left: 1px solid white; /* Change the border style and color as needed */
-  margin-top: 60px;
+  margin-top: 40px;
   position: relative;
 }
 
