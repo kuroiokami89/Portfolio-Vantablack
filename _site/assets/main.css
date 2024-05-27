@@ -142,7 +142,7 @@ p {
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
-  margin: 0 13%;
+  margin-bottom: 0 !important;
 }
 
 .header-anchors {
@@ -359,7 +359,7 @@ p {
 .work-exp {
   position: relative;
   margin-bottom: 80px;
-  padding-left: 30px; /* Add padding to align the content */
+  padding-left: 25px; /* Add padding to align the content */
 }
 
 .square {
