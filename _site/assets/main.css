@@ -142,6 +142,7 @@ p {
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
+  margin: 0 13%;
 }
 
 .header-anchors {
