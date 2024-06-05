@@ -391,4 +391,17 @@ p {
   margin-right: 500px;
 }
 
+#cvBtn {
+  padding: 15px 30px;
+  border: 1px solid white;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  margin-top: 20px;
+}
+
+#cvBtn:hover {
+  background: white;
+  color: black;
+  transform: scale(1.05);
+}
+
 /** FINE STILE WORKS **/
