@@ -58,6 +58,11 @@ h3 {
   font-size: 25px !important;
 }
 
+#vb-logo {
+  height: 80px;
+  width: 80px;
+}
+
 .blocco {
   margin-bottom: 100px !important;
   margin: 0 13%;
@@ -98,7 +103,7 @@ a {
 p {
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: 100;
-  font-size: 1.7rem;
+  font-size: 1.45rem;
 }
 /** FINE STILI GLOBALI **/
 
@@ -203,7 +208,7 @@ p {
 .footer-container {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   gap: 5px;
 }
 
@@ -330,7 +335,6 @@ p {
 }
 
 .skills-text p {
-  font-size: 1.55rem;
   margin-right: 105px;
 }
 
@@ -383,7 +387,7 @@ p {
 }
 
 .work-exp p {
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
   margin-right: 500px;
 }
 
