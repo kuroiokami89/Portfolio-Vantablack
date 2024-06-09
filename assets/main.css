@@ -187,17 +187,17 @@ p {
   }
 }
 
-.header-fixed-style {
+/* .header-fixed-style {
   backdrop-filter: blur(10px);
   will-change: background;
   background-color: rgba(234, 234, 234, 0.106);
-}
+} */
 /** FINE STILE HEADER **/
 
 /** INIZIO STILE FOOTER **/
 #footer {
   font-size: 1.3rem;
-  padding: 70px 0;
+  padding: 50px 0;
   margin: 0 13%;
 }
 
