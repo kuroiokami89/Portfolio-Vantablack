@@ -186,12 +186,6 @@ p {
     background-position: 100% 100%;
   }
 }
-
-/* .header-fixed-style {
-  backdrop-filter: blur(10px);
-  will-change: background;
-  background-color: rgba(234, 234, 234, 0.106);
-} */
 /** FINE STILE HEADER **/
 
 /** INIZIO STILE FOOTER **/
@@ -390,6 +384,15 @@ p {
 .work-exp p {
   /* font-size: 1.3rem; */
   margin-right: 500px;
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 25px;
+}
+
+#education-list {
+  margin-bottom: 150px;
 }
 
 #cvBtn {
