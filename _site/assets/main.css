@@ -352,6 +352,7 @@ p {
 .work-list {
   border-left: 1px solid white; /* Change the border style and color as needed */
   margin-top: 40px;
+  margin-right: 300px;
   position: relative;
 }
 
@@ -389,6 +390,7 @@ p {
 ul {
   list-style-type: square;
   margin-left: 25px;
+  margin-top: 30px;
 }
 
 #education-list {
