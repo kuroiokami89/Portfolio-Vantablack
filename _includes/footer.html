@@ -1,21 +1,48 @@
-<footer id="footer">
-  <div class="footer-container">
-    <div class="footer-socials">
-      <a class="link" href="mailto:sergioallushaj@gmail.com">EMAIL</a>
-      <a href="https://github.com/kuroiokami89" class="footer-link link">
-        GITHUB
-      </a>
-      <a class="footer-link link" href="https://www.instagram.com/artsense89/"
-        >INSTAGRAM</a
-      >
-      <a
-        class="footer-link link"
-        href="https://www.linkedin.com/in/sergio-allushaj-a92b9717a/"
-        >LINKEDIN</a
-      >
-    </div>
-    <a href="#top"
-      ><img id="vb-logo" src="pics/vb-logo-removebg-preview.png"
-    /></a>
+<footer id="footer" style="margin: 0 30px">
+  <div class="section-title" style="position: relative">
+    <a href="mailto:sergioallushaj@gmail.com" id="emailLink" class="email">
+      LET'S TALK
+    </a>
+    <div id="customCursor" class="custom-cursor">SEND EMAIL</div>
   </div>
 </footer>
+
+<style>
+  /* Custom tooltip style */
+  .custom-cursor {
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border: 1px solid white;
+    font-size: 1.3rem;
+    white-space: nowrap;
+    pointer-events: none;
+    display: none;
+    z-index: 1000;
+  }
+
+  #emailLink:hover {
+    cursor: none;
+  }
+</style>
+
+<script>
+  const link = document.getElementById("emailLink");
+  const customCursor = document.getElementById("customCursor");
+
+  link.addEventListener("mouseover", () => {
+    customCursor.style.display = "block";
+  });
+
+  link.addEventListener("mousemove", (e) => {
+    // Adjust the position relative to the parent element
+    const rect = link.getBoundingClientRect();
+    customCursor.style.left = e.clientX - rect.left + "px";
+    customCursor.style.top = e.clientY - rect.top + "px";
+  });
+
+  link.addEventListener("mouseout", () => {
+    customCursor.style.display = "none";
+  });
+</script>

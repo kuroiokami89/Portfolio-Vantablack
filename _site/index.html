@@ -20,8 +20,8 @@
 />
 <link
   rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
   crossorigin="anonymous"
   referrerpolicy="no-referrer"
 />
@@ -39,6 +39,14 @@
 <!-- FONTS -->
 <link href="https://fonts.cdnfonts.com/css/afacad" rel="stylesheet" />
 
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Syne:wght@400..800&display=swap"
+  rel="stylesheet"
+/>
+<link href="https://fonts.cdnfonts.com/css/trixie-2" rel="stylesheet" />
+
 <!-- FONT TITOLI -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -52,12 +60,24 @@
   rel="stylesheet"
 />
 
+<link href="https://fonts.cdnfonts.com/css/identidad" rel="stylesheet" />
+
+<link href="https://fonts.cdnfonts.com/css/lt-binary-neue" rel="stylesheet" />
+
+<link href="https://fonts.cdnfonts.com/css/hanken-grotesk-2" rel="stylesheet" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap"
+  rel="stylesheet"
+/>
+
 <!-- FINE FONTS -->
 
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
 <!-- TEXT EFFECTS -->
-<script src="js\typeWriterEffect.js"></script>
 <!-- END TEXT EFFECTS -->
 
 <!-- SMOOTH SCROLL -->
@@ -65,12 +85,12 @@
 <!-- END SMOOTH SCROLL -->
 
     <link rel="icon" type="image/x-icon" href="pics/vb.ico" />
-    <title>VantaBlack</title>
+    <title>VantaBlack v1.1</title>
   </head>
   <body>
     <div id="video-container">
       <video autoplay muted onended="endVideo()">
-        <source src="assets/Title.mp4" type="video/mp4" />
+        <source src="assets/Vantablack Video 2.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
@@ -78,13 +98,14 @@
     <div id="content-container">
       <header id="header">
   <div class="header-container blocco">
-    <a id="logo" href="#top">
-      <!-- <span id="name">VANTABLACK</span> -->
-      <img id="vb-logo" src="pics/vb-logo-removebg-preview.png" />
+    <a id="logo" href="/Portfolio-Vantablack/">
+      <!-- <span id="name">VB</span> -->
+      vantaBlack
+      <!-- <img id="vb-logo" src="pics/vb-logo-removebg-preview.png" /> -->
     </a>
     <div class="header-anchors">
-      <a class="link" href="#about">ABOUT</a>
-      <a class="link" href="#projects">PROJECT</a>
+      <a class="link" href="/Portfolio-Vantablack/about">ABOUT</a>
+      <a class="link" href="#projects">PROJECTS</a>
       <a class="link" href="#skills">SKILLS</a>
     </div>
   </div>
@@ -113,179 +134,27 @@
     });
   });
 </script>
- <div id="top"></div>
-<div id="about" class="blocco" data-aos="fade-up">
-  <div class="about-container">
-    <div class="about-title">
-      <h1 class="about-animated">hi, i’m sergio Allushaj, a web developer</h1>
-      <span class="about-span-animated"></span>
-    </div>
-    <div class="about-me" data-aos="fade-up">
-      <div
-        class="about-img"
-        style="background-image: url('pics/pro-pic.jpg')"
-      ></div>
-    </div>
-  </div>
-</div>
-
-<!-- <style>
-  /* Aggiungi questo stile per l'immagine */
-  .about-img {
-    opacity: 0; /* Rendi l'immagine trasparente all'inizio */
-    transition: opacity 2s; /* Imposta la transizione di opacità */
-    transition-delay: 2s; /* Imposta il ritardo della transizione */
-  }
-</style> -->
-
-<script
-  src="https://code.jquery.com/jquery-3.7.1.js"
-  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-  crossorigin="anonymous"
-></script>
-<script src="https://cdn.jsdelivr.net/gh/mattboldt/typed.js/lib/typed.min.js"></script>
-<script>
-  $(document).ready(function () {
-    // Use Typed.js instead
-    // var typed = new Typed(".about-animated", {
-    //   strings: ["hi, i’m sergio Allushaj, a web developer"],
-    //   typeSpeed: 150,
-    //   loop: false,
-    //   showCursor: false,
-    // });
-  });
-  $(window).on("load", function () {
-    var fadeContainer = $(".about-me");
-
-    var options = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.5, // Adjust the threshold as needed
-    };
-
-    var observer = new IntersectionObserver(function (entries, observer) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          // Set a timeout to delay the fade-in effect
-          setTimeout(function () {
-            // Fade in the image
-            fadeContainer.find(".about-img").css("opacity", "1");
-
-            // Fade out the rest of the content
-            // fadeContainer.find(".about-img").animate({ opacity: 0 }, 1000);
-          }, 6500); // Adjust the delay time as needed
-
-          // Stop observing once the content is visible
-          observer.unobserve(entry.target);
-        }
-      });
-    }, options);
-
-    // Start observing the target element
-    observer.observe(fadeContainer[0]);
-  });
-</script>
- <div id="skills" class="blocco">
-  <div class="skills-text" data-aos="fade-up">
-    <h2>skills</h2>
+ <div id="intro" class="blocco" data-aos="fade-up">
+  <div class="intro-container">
+    <h1>
+      Sergio <br />
+      Allushaj
+    </h1>
     <p>
-      I specialize in front-end development with expertise in HTML, CSS,
-      JavaScript and Next js. My focus is on creating beautiful and functional
-      websites with a modern look and excellent user experience.
+      Web Graphic Designer <br />
+      Junior Front-End Developer <br />
+      Based in Italy
     </p>
   </div>
-  <div class="tech-list">
-    <i class="fa-brands fa-html5" data-aos="fade-up"></i>
-    <i class="fa-brands fa-css3" data-aos="fade-up"></i>
-    <i class="fa-brands fa-figma"></i>
-    <i class="fa-brands fa-react" data-aos="fade-up"></i>
-    <i class="fa-brands fa-js" data-aos="fade-up"></i>
-    <i class="fa-brands fa-bootstrap" data-aos="fade-up"></i>
-  </div>
-</div>
-
-<script
-  src="https://code.jquery.com/jquery-3.7.1.js"
-  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-  crossorigin="anonymous"
-></script>
-<script>
-  $(document).ready(function () {});
-</script>
- <div id="work" class="blocco" data-aos="fade-up">
-  <h2>my education</h2>
-  <div id="education-list" class="work-list">
-    <div class="work-exp">
-      <div class="square"></div>
-      <time datetime="2021-12-22T14:30">2013/09/13 - 2018/07/10</time>
-      <h3>
-        diploma: audiovisual productions - industry and craftsmanship sector
-        ipsia galileo galilei
-      </h3>
-      <p>
-        I studied photography both technically and theoretically, learning the
-        photographic language through cinema, art, and history. My training
-        included professional videomaking, covering audio, video, and software
-        equipment for diverse productions such as interviews, commercials,
-        sports events, shows, and documentaries.
-      </p>
-    </div>
-    <div class="work-exp">
-      <div class="square"></div>
-      <time datetime="2021-12-22T14:30">2024/05/15 - ongoing</time>
-      <h3>web development and design course</h3>
-      <h4>accademia delle professioni, padova, italy</h4>
-      <p>
-        Currently studying HTML5, CSS4, JavaScript, and jQuery for front-end
-        development and using Figma to study responsive and user-friendly
-        principles for web application prothotipying. Utilizing Photoshop,
-        Illustrator and After Effects for design and animation tasks like
-        personalized logos, icons and creation of video motions.
-      </p>
-    </div>
-  </div>
-  <h2>my work experience</h2>
-  <div class="work-list">
-    <div class="work-exp">
-      <div class="square"></div>
-      <time datetime="2021-12-22T14:30">2021/12/21 - 2022/08/22</time>
-      <h3>customer service - storeden (tv)</h3>
-      <p>
-        Dedicated technical assistance to customers in case of bugs on the
-        Storeden e-commerce platform or on the website. Performed front-end
-        customizations of websites using JavaScript, HTML, CSS, Twig, and
-        Bootstrap.
-      </p>
-    </div>
-    <div class="work-exp">
-      <div class="square"></div>
-      <time datetime="2021-12-22T14:30">2021/12/21 - 2022/08/22</time>
-      <h3>junior back-end developer - esosphera (rs)</h3>
-      <p>
-        Developed web applications with a focus on object-oriented programming
-        using Yii2 as the main framework, and used Psql for relational
-        databases.
-      </p>
-    </div>
-    <div class="work-exp">
-      <div class="square"></div>
-      <time datetime="2021-12-22T14:30">2021/12/21 - 2022/08/22</time>
-      <h3>junior full-stack developer - W-easy</h3>
-      <p>
-        Development and maintenance of websites and management services for
-        companies using the following technologies: JavaScript HTML CSS and PHP.
-      </p>
-    </div>
-  </div>
-  <a
-    id="cvBtn"
-    href="assets/ALLUSHAJ SERGIO CV 2024.pdf"
-    download="CV Allushaj Sergio.pdf"
-    >DOWNLOAD CV</a
-  >
+  <span>
+    [ FEATURED PROJECTS
+    <i class="fa-solid fa-arrow-down"></i> ]
+  </span>
 </div>
  <div id="projects" class="blocco" data-aos="fade-up">
-  <h2>projects</h2>
+  <div class="section-title">
+    <h2>PROJECTS</h2>
+  </div>
   <div class="project-container">
     <div class="project-list-left">
       <div class="project" data-aos="fade-up">
@@ -294,7 +163,7 @@
           style="background-image: url('pics/vanta.gif')"
         ></div>
         <div class="project-text">
-          <span>portfolio website</span>
+          <span>Portfolio Website</span>
           <h3>Vantablack portfolio</h3>
           <a
             class="link"
@@ -309,7 +178,7 @@
           style="background-image: url('pics/23-min.jpg')"
         ></div>
         <div class="project-text">
-          <span>photo gallery</span>
+          <span>Photo Gallery</span>
           <h3>Artsense gallery v1.0</h3>
           <a class="link" href="https://llvs9g-8080.csb.app/"
             ><i class="fa-solid fa-caret-right"></i> Visit the website</a
@@ -324,7 +193,7 @@
           style="background-image: url('pics/kronos.jpg')"
         ></div>
         <div class="project-text">
-          <span>figma project</span>
+          <span>Figma Project</span>
           <h3>kronos luxury watch e-shop</h3>
           <a
             class="link"
@@ -334,47 +203,56 @@
         </div>
       </div>
     </div>
-
-    <!-- <iframe
-      style="border: 1px solid rgba(0, 0, 0, 0.1)"
-      width="800"
-      height="450"
-      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FAIxk93Bhw0tdkwpQ5MFVQS%2FEcommerce---Kronos%3Fnode-id%3D11-16%26t%3DWT6mTwVcZAsHaAfS-1"
-      allowfullscreen
-    ></iframe> -->
   </div>
 </div>
-
-<script
-  src="https://code.jquery.com/jquery-3.7.1.js"
-  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-  crossorigin="anonymous"
-></script>
-<script>
-  $(document).ready(function () {});
-</script>
-
- <footer id="footer">
-  <div class="footer-container">
-    <div class="footer-socials">
-      <a class="link" href="mailto:sergioallushaj@gmail.com">EMAIL</a>
-      <a href="https://github.com/kuroiokami89" class="footer-link link">
-        GITHUB
-      </a>
-      <a class="footer-link link" href="https://www.instagram.com/artsense89/"
-        >INSTAGRAM</a
-      >
-      <a
-        class="footer-link link"
-        href="https://www.linkedin.com/in/sergio-allushaj-a92b9717a/"
-        >LINKEDIN</a
-      >
-    </div>
-    <a href="#top"
-      ><img id="vb-logo" src="pics/vb-logo-removebg-preview.png"
-    /></a>
+ <footer id="footer" style="margin: 0 30px">
+  <div class="section-title" style="position: relative">
+    <a href="mailto:sergioallushaj@gmail.com" id="emailLink" class="email">
+      LET'S TALK
+    </a>
+    <div id="customCursor" class="custom-cursor">SEND EMAIL</div>
   </div>
 </footer>
+
+<style>
+  /* Custom tooltip style */
+  .custom-cursor {
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border: 1px solid white;
+    font-size: 1.3rem;
+    white-space: nowrap;
+    pointer-events: none;
+    display: none;
+    z-index: 1000;
+  }
+
+  #emailLink:hover {
+    cursor: none;
+  }
+</style>
+
+<script>
+  const link = document.getElementById("emailLink");
+  const customCursor = document.getElementById("customCursor");
+
+  link.addEventListener("mouseover", () => {
+    customCursor.style.display = "block";
+  });
+
+  link.addEventListener("mousemove", (e) => {
+    // Adjust the position relative to the parent element
+    const rect = link.getBoundingClientRect();
+    customCursor.style.left = e.clientX - rect.left + "px";
+    customCursor.style.top = e.clientY - rect.top + "px";
+  });
+
+  link.addEventListener("mouseout", () => {
+    customCursor.style.display = "none";
+  });
+</script>
 
     </div>
 

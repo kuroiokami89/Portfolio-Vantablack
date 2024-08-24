@@ -18,8 +18,8 @@
 />
 <link
   rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
   crossorigin="anonymous"
   referrerpolicy="no-referrer"
 />
@@ -37,6 +37,14 @@
 <!-- FONTS -->
 <link href="https://fonts.cdnfonts.com/css/afacad" rel="stylesheet" />
 
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Syne:wght@400..800&display=swap"
+  rel="stylesheet"
+/>
+<link href="https://fonts.cdnfonts.com/css/trixie-2" rel="stylesheet" />
+
 <!-- FONT TITOLI -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -50,12 +58,24 @@
   rel="stylesheet"
 />
 
+<link href="https://fonts.cdnfonts.com/css/identidad" rel="stylesheet" />
+
+<link href="https://fonts.cdnfonts.com/css/lt-binary-neue" rel="stylesheet" />
+
+<link href="https://fonts.cdnfonts.com/css/hanken-grotesk-2" rel="stylesheet" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap"
+  rel="stylesheet"
+/>
+
 <!-- FINE FONTS -->
 
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
 <!-- TEXT EFFECTS -->
-<script src="js\typeWriterEffect.js"></script>
 <!-- END TEXT EFFECTS -->
 
 <!-- SMOOTH SCROLL -->
@@ -63,13 +83,14 @@
 <!-- END SMOOTH SCROLL -->
 <body><header id="header">
   <div class="header-container blocco">
-    <a id="logo" href="#top">
-      <!-- <span id="name">VANTABLACK</span> -->
-      <img id="vb-logo" src="pics/vb-logo-removebg-preview.png" />
+    <a id="logo" href="/Portfolio-Vantablack/">
+      <!-- <span id="name">VB</span> -->
+      vantaBlack
+      <!-- <img id="vb-logo" src="pics/vb-logo-removebg-preview.png" /> -->
     </a>
     <div class="header-anchors">
-      <a class="link" href="#about">ABOUT</a>
-      <a class="link" href="#projects">PROJECT</a>
+      <a class="link" href="/Portfolio-Vantablack/about">ABOUT</a>
+      <a class="link" href="#projects">PROJECTS</a>
       <a class="link" href="#skills">SKILLS</a>
     </div>
   </div>
@@ -122,27 +143,54 @@
 </div>
 
       </div>
-    </main><footer id="footer">
-  <div class="footer-container">
-    <div class="footer-socials">
-      <a class="link" href="mailto:sergioallushaj@gmail.com">EMAIL</a>
-      <a href="https://github.com/kuroiokami89" class="footer-link link">
-        GITHUB
-      </a>
-      <a class="footer-link link" href="https://www.instagram.com/artsense89/"
-        >INSTAGRAM</a
-      >
-      <a
-        class="footer-link link"
-        href="https://www.linkedin.com/in/sergio-allushaj-a92b9717a/"
-        >LINKEDIN</a
-      >
-    </div>
-    <a href="#top"
-      ><img id="vb-logo" src="pics/vb-logo-removebg-preview.png"
-    /></a>
+    </main><footer id="footer" style="margin: 0 30px">
+  <div class="section-title" style="position: relative">
+    <a href="mailto:sergioallushaj@gmail.com" id="emailLink" class="email">
+      LET'S TALK
+    </a>
+    <div id="customCursor" class="custom-cursor">SEND EMAIL</div>
   </div>
 </footer>
+
+<style>
+  /* Custom tooltip style */
+  .custom-cursor {
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border: 1px solid white;
+    font-size: 1.3rem;
+    white-space: nowrap;
+    pointer-events: none;
+    display: none;
+    z-index: 1000;
+  }
+
+  #emailLink:hover {
+    cursor: none;
+  }
+</style>
+
+<script>
+  const link = document.getElementById("emailLink");
+  const customCursor = document.getElementById("customCursor");
+
+  link.addEventListener("mouseover", () => {
+    customCursor.style.display = "block";
+  });
+
+  link.addEventListener("mousemove", (e) => {
+    // Adjust the position relative to the parent element
+    const rect = link.getBoundingClientRect();
+    customCursor.style.left = e.clientX - rect.left + "px";
+    customCursor.style.top = e.clientY - rect.top + "px";
+  });
+
+  link.addEventListener("mouseout", () => {
+    customCursor.style.display = "none";
+  });
+</script>
 </body>
 
 </html>
