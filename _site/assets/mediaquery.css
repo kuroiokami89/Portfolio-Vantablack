@@ -19,6 +19,11 @@
     margin: 0 5%;
   }
 
+  .email,
+  #p-name {
+    font-size: 11rem !important;
+  }
+
   #works {
     width: 100%;
     height: 100%;
@@ -246,6 +251,10 @@
 
   .work-exp p {
     margin-right: 0px;
+  }
+
+  #p-name {
+    font-size: 1.5rem !important;
   }
 }
 

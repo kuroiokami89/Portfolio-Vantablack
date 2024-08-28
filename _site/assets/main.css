@@ -271,6 +271,14 @@ p {
   text-transform: uppercase;
 }
 
+#p-name {
+  font-weight: 400;
+  margin: 10px 0;
+  font-size: 16rem !important;
+  line-height: 1;
+  font-family: "LT Binary Neue", sans-serif !important;
+}
+
 /** FINE STILE INTRO **/
 
 /** INIZIO STILE ABOUT **/
