@@ -274,6 +274,9 @@ p {
   font-family: "LT Binary Neue", sans-serif !important;
 }
 
+#p-name-mobile {
+  display: none;
+}
 /** FINE STILE INTRO **/
 
 /** INIZIO STILE ABOUT **/
