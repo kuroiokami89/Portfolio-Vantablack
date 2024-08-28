@@ -187,6 +187,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   gap: 30px;
   position: relative;
   height: 100vh;

@@ -256,6 +256,10 @@
   #p-name {
     font-size: 1.5rem !important;
   }
+
+  .email {
+    font-size: 5rem !important;
+  }
 }
 
 @media screen and (max-width: 480px) {
