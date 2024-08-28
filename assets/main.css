@@ -352,29 +352,6 @@ p {
 }
 /** FINE STILE PROJECTS **/
 
-/** INIZIO STILE SKILLS **/
-#skills {
-  display: flex;
-  flex-direction: column;
-  padding: 100px 0;
-  text-align: center;
-}
-
-.tech-list {
-  margin-top: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 150px;
-  row-gap: 50px;
-  justify-content: center;
-}
-
-.tech-list i {
-  font-size: 3.5rem;
-}
-
-/** FINE STILE SKILLS **/
-
 /** INIZIO STILE WORKS **/
 
 .work-list {
