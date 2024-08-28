@@ -260,6 +260,10 @@
   .email {
     font-size: 5rem !important;
   }
+
+  #intro span {
+    bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 480px) {
