@@ -98,11 +98,7 @@
     <div id="content-container">
       <header id="header">
   <div class="header-container blocco">
-    <a id="logo" href="/Portfolio-Vantablack/">
-      <!-- <span id="name">VB</span> -->
-      vantaBlack
-      <!-- <img id="vb-logo" src="pics/vb-logo-removebg-preview.png" /> -->
-    </a>
+    <a id="logo" href="/Portfolio-Vantablack/"> vantaBlack </a>
     <div class="header-anchors">
       <a class="link" href="#about">ABOUT</a>
       <a class="link" href="#projects">PROJECTS</a>
@@ -134,7 +130,12 @@
     });
   });
 </script>
- <div id="intro" class="blocco" data-aos="fade-up">
+ <div
+  id="intro"
+  class="blocco"
+  data-aos="fade-up"
+  style="background-image: url('pics/intro-background-1-1.png')"
+>
   <div class="intro-container">
     <p id="p-name">
       Sergio <br />
@@ -163,63 +164,6 @@
     websites that provide a great user experience. <br />
   </div>
 </div>
-
-<!-- <style>
-  /* Aggiungi questo stile per l'immagine */
-  .about-img {
-    opacity: 0; /* Rendi l'immagine trasparente all'inizio */
-    transition: opacity 2s; /* Imposta la transizione di opacità */
-    transition-delay: 2s; /* Imposta il ritardo della transizione */
-  }
-</style> -->
-
-<!-- <script
-  src="https://code.jquery.com/jquery-3.7.1.js"
-  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-  crossorigin="anonymous"
-></script>
-<script src="https://cdn.jsdelivr.net/gh/mattboldt/typed.js/lib/typed.min.js"></script>
-<script>
-  $(document).ready(function () {
-    // Use Typed.js instead
-    // var typed = new Typed(".about-animated", {
-    //   strings: ["hi, i’m sergio Allushaj, a web developer"],
-    //   typeSpeed: 150,
-    //   loop: false,
-    //   showCursor: false,
-    // });
-  });
-  $(window).on("load", function () {
-    var fadeContainer = $(".about-me");
-
-    var options = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.5, // Adjust the threshold as needed
-    };
-
-    var observer = new IntersectionObserver(function (entries, observer) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          // Set a timeout to delay the fade-in effect
-          setTimeout(function () {
-            // Fade in the image
-            fadeContainer.find(".about-img").css("opacity", "1");
-
-            // Fade out the rest of the content
-            // fadeContainer.find(".about-img").animate({ opacity: 0 }, 1000);
-          }, 6500); // Adjust the delay time as needed
-
-          // Stop observing once the content is visible
-          observer.unobserve(entry.target);
-        }
-      });
-    }, options);
-
-    // Start observing the target element
-    observer.observe(fadeContainer[0]);
-  });
-</script> -->
  <div id="projects" class="blocco" data-aos="fade-up">
   <div class="section-title">
     <h2>PROJECTS</h2>
@@ -333,13 +277,6 @@
   </div>
   <div class="line"></div>
   <div class="footer-socials">
-    <!-- <p>
-      Now that you’re here, why not reach out? Explore my socials and email
-      <br />
-      address. If you have a collaboration idea or a cool new concept, don’t
-      <br />
-      hesitate to drop me a message. I’d love to hear from you! <br />
-    </p> -->
     <div class="social-links">
       <a href="https://www.linkedin.com/in/sergio-allushaj-a92b9717a/">
         LINKEDIN

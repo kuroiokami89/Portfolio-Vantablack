@@ -15,7 +15,7 @@
 
 @media screen and (max-width: 1450px) {
   .blocco {
-    margin: 0 5%;
+    padding: 0 5%;
   }
 
   .email,
@@ -108,23 +108,9 @@
     overflow: hidden !important;
   }
 
-  #skills,
   #projects {
-    margin: 0 30px;
+    /* margin: 0 30px; */
     text-align: left;
-  }
-
-  #skills p,
-  #skills h2 {
-    margin: 0;
-  }
-
-  .tech-list i {
-    font-size: 3rem !important;
-  }
-
-  .work-exp p {
-    margin-right: 100px;
   }
 }
 
@@ -161,7 +147,7 @@
 
   .blocco {
     margin-bottom: 150px !important;
-    margin: 0 30px;
+    padding: 0 30px;
   }
 
   .header-anchors {
@@ -198,21 +184,8 @@
     row-gap: 30px;
   }
 
-  #skills {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .tech-list {
-    column-gap: 40px;
-  }
-
   #projects {
     margin-bottom: 0 !important;
-  }
-
-  .work-exp p {
-    margin-right: 0px;
   }
 
   #p-name {

@@ -71,7 +71,8 @@ h3 {
 }
 
 .blocco {
-  margin: 0 8%;
+  /* margin: 0 8%; */
+  padding: 0 8%;
   margin-bottom: 200px !important;
 }
 
@@ -163,11 +164,6 @@ p {
   color: black;
 }
 
-/* #name {
-  font-family: "Trixie Regular", sans-serif;
-  font-size: 2.5rem;
-} */
-
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -245,6 +241,7 @@ p {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+  background-size: cover;
 }
 
 #intro span {
@@ -351,138 +348,3 @@ p {
   opacity: 1 !important;
 }
 /** FINE STILE PROJECTS **/
-
-/** INIZIO STILE SKILLS **/
-#skills {
-  display: flex;
-  flex-direction: column;
-  padding: 100px 0;
-  text-align: center;
-}
-
-.tech-list {
-  margin-top: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 150px;
-  row-gap: 50px;
-  justify-content: center;
-}
-
-.tech-list i {
-  font-size: 3.5rem;
-}
-
-/** FINE STILE SKILLS **/
-
-/** INIZIO STILE WORKS **/
-
-.work-list {
-  border-left: 1px solid white; /* Change the border style and color as needed */
-  margin-top: 40px;
-  margin-right: 300px;
-  position: relative;
-}
-
-.work-exp {
-  position: relative;
-  margin-bottom: 80px;
-  padding-left: 25px; /* Add padding to align the content */
-}
-
-.square {
-  position: absolute;
-  left: -6px; /* Adjust the position of the square to center it on the timeline */
-  top: 0;
-  height: 12px;
-  width: 12px;
-  background-color: white; /* Change the color as needed */
-}
-
-.work-exp time {
-  display: block;
-  font-size: 1.15rem;
-  color: white;
-  margin-bottom: 20px;
-}
-
-.work-exp h3 {
-  margin: 5px 0;
-}
-
-.work-exp p {
-  /* font-size: 1.3rem; */
-  margin-right: 500px;
-}
-
-ul {
-  list-style-type: square;
-  margin-left: 25px;
-  margin-top: 30px;
-}
-
-#education-list {
-  margin-bottom: 150px;
-}
-
-#cvBtn {
-  padding: 15px 30px;
-  border: 1px solid white;
-  transition: background-color 0.3s, color 0.3s, transform 0.3s;
-  margin-top: 20px;
-}
-
-#cvBtn:hover {
-  background: white;
-  color: black;
-  transform: scale(1.05);
-}
-
-/** FINE STILE WORKS **/
-
-/** INIZIO STILE COMPETENZE **/
-.compenteces-container {
-  margin-top: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.competence-skill {
-  background-color: rgba(0, 0, 0, 0.8);
-  opacity: 0.5 !important;
-  font-size: 1.5rem;
-  padding: 30px;
-  width: 400px;
-  height: 400px;
-  transition: opacity 0.8s ease-in-out;
-  display: flex;
-  flex-direction: column;
-}
-
-.competence-skill:hover {
-  opacity: 1 !important;
-}
-
-.card-title {
-  padding: 15px 25px;
-  width: fit-content;
-}
-
-.code-line span:nth-child(2) {
-  margin-left: 15px;
-}
-
-.code-card {
-  padding: 20px 25px;
-  display: flex;
-  flex-direction: column;
-  height: 40vh;
-}
-
-.card-title,
-.code-card {
-  border: 1px solid white;
-}
-
-/** FINE STILE COMPETENZE **/
