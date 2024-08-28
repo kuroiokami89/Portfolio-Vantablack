@@ -224,6 +224,10 @@ p {
   cursor: pointer;
 }
 
+#footer span {
+  text-align: left;
+}
+
 .line {
   width: 100%;
   border-top: 1px solid white;
