@@ -151,6 +151,77 @@
     <i class="fa-solid fa-arrow-down"></i> ]
   </span>
 </div>
+ <div id="about" class="blocco" data-aos="fade-up">
+  <div class="about-container">
+    <div class="about-title">
+      <h1 class="about-animated">hi, i’m sergio Allushaj, a web developer</h1>
+      <span class="about-span-animated"></span>
+    </div>
+    <div class="about-me" data-aos="fade-up">
+      <div
+        class="about-img"
+        style="background-image: url('pics/pro-pic.jpg')"
+      ></div>
+    </div>
+  </div>
+</div>
+
+<!-- <style>
+  /* Aggiungi questo stile per l'immagine */
+  .about-img {
+    opacity: 0; /* Rendi l'immagine trasparente all'inizio */
+    transition: opacity 2s; /* Imposta la transizione di opacità */
+    transition-delay: 2s; /* Imposta il ritardo della transizione */
+  }
+</style> -->
+
+<script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"
+></script>
+<script src="https://cdn.jsdelivr.net/gh/mattboldt/typed.js/lib/typed.min.js"></script>
+<script>
+  $(document).ready(function () {
+    // Use Typed.js instead
+    // var typed = new Typed(".about-animated", {
+    //   strings: ["hi, i’m sergio Allushaj, a web developer"],
+    //   typeSpeed: 150,
+    //   loop: false,
+    //   showCursor: false,
+    // });
+  });
+  $(window).on("load", function () {
+    var fadeContainer = $(".about-me");
+
+    var options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5, // Adjust the threshold as needed
+    };
+
+    var observer = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          // Set a timeout to delay the fade-in effect
+          setTimeout(function () {
+            // Fade in the image
+            fadeContainer.find(".about-img").css("opacity", "1");
+
+            // Fade out the rest of the content
+            // fadeContainer.find(".about-img").animate({ opacity: 0 }, 1000);
+          }, 6500); // Adjust the delay time as needed
+
+          // Stop observing once the content is visible
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+
+    // Start observing the target element
+    observer.observe(fadeContainer[0]);
+  });
+</script>
  <div id="projects" class="blocco" data-aos="fade-up">
   <div class="section-title">
     <h2>PROJECTS</h2>
@@ -225,6 +296,7 @@
       <a href="https://www.linkedin.com/in/sergio-allushaj-a92b9717a/">
         LINKEDIN
       </a>
+      <a href="https://github.com/kuroiokami89"> GITHUB </a>
       <a href="assets/ALLUSHAJ SERGIO CV 2024.pdf"> DOWNLOAD.CV </a>
     </div>
   </div>
