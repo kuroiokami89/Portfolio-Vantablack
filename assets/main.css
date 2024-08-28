@@ -188,13 +188,29 @@ p {
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 30px;
+  gap: 80px;
   position: relative;
   height: 100vh;
+  margin: 150px 30px;
 }
 
 #footer .section-title {
   position: relative;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 700px;
+}
+
+.footer-socials p {
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 30px;
 }
 
 .email {
@@ -208,38 +224,11 @@ p {
   cursor: pointer;
 }
 
-#footer h2,
-.footer-sec {
-  margin-bottom: 25px;
-}
-
-.footer-sec {
-  font-size: 1.5rem;
-}
-
-.footer-wright {
+.line {
+  width: 100%;
   border-top: 1px solid white;
 }
 
-.footer-wright p {
-  margin-top: 45px;
-}
-
-.footer-container {
-  display: flex;
-  gap: 200px;
-  margin-bottom: 50px;
-}
-
-.footer-container span {
-  margin-bottom: 20px !important;
-}
-
-.footer-socials {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
 /** FINE STILE FOOTER **/
 
 /** FINE STILE FOOTER **/

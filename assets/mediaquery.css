@@ -14,8 +14,7 @@
 }
 
 @media screen and (max-width: 1450px) {
-  .blocco,
-  #footer {
+  .blocco {
     margin: 0 5%;
   }
 
@@ -68,10 +67,6 @@
 
   #header {
     display: none !important;
-  }
-
-  #footer {
-    margin: 0 30px;
   }
 
   #projects h2 {
@@ -219,7 +214,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0;
     padding: 0;
     height: 100vh !important;
   }
