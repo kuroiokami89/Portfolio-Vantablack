@@ -4,51 +4,101 @@
   </div>
   <div class="project-container">
     <div class="project-list-left">
-      <div class="project" data-aos="fade-up">
-        <div
-          class="project-img"
-          style="background-image: url('pics/vanta.gif')"
-        ></div>
-        <div class="project-text">
-          <span>Portfolio Website</span>
-          <h3>Vantablack portfolio</h3>
-          <a
-            class="link"
-            href="https://kuroiokami89.github.io/Vantablack-Portfolio-2.0/"
-            ><i class="fa-solid fa-caret-right"></i> Visit the website</a
-          >
+      <a
+        class="project-link"
+        href="https://kuroiokami89.github.io/Vantablack-Portfolio-2.0/"
+      >
+        <div class="project" data-aos="fade-up">
+          <div
+            class="project-img"
+            style="background-image: url('pics/vanta.gif')"
+          ></div>
+          <div class="project-text">
+            <span>Portfolio Website</span>
+            <h3>Vantablack portfolio</h3>
+          </div>
+          <div class="custom-cursor">OPEN PROJECT</div>
         </div>
-      </div>
-      <div class="project" data-aos="fade-up">
-        <div
-          class="project-img"
-          style="background-image: url('pics/23-min.jpg')"
-        ></div>
-        <div class="project-text">
-          <span>Photo Gallery</span>
-          <h3>Artsense gallery v1.0</h3>
-          <a class="link" href="https://llvs9g-8080.csb.app/"
-            ><i class="fa-solid fa-caret-right"></i> Visit the website</a
-          >
+      </a>
+      <a
+        class="project-link"
+        href="https://kuroiokami89.github.io/Vantablack-Portfolio-2.0/"
+      >
+        <div class="project" data-aos="fade-up">
+          <div
+            class="project-img"
+            style="background-image: url('pics/23-min.jpg')"
+          ></div>
+          <div class="project-text">
+            <span>Photo Gallery</span>
+            <h3>Artsense gallery v1.0</h3>
+          </div>
+          <div class="custom-cursor">OPEN PROJECT</div>
         </div>
-      </div>
+      </a>
     </div>
     <div class="project-list-right">
-      <div class="project" data-aos="fade-up">
-        <div
-          class="project-img"
-          style="background-image: url('pics/kronos.jpg')"
-        ></div>
-        <div class="project-text">
-          <span>Figma Project</span>
-          <h3>kronos luxury watch e-shop</h3>
-          <a
-            class="link"
-            href="https://www.figma.com/design/AIxk93Bhw0tdkwpQ5MFVQS/Ecommerce---Kronos?node-id=0-1&t=Gla0ppj60NeuBXXi-1"
-            ><i class="fa-solid fa-caret-right"></i> Visit the project</a
-          >
+      <a
+        class="project-link"
+        href="https://www.figma.com/design/AIxk93Bhw0tdkwpQ5MFVQS/Ecommerce---Kronos?node-id=0-1&t=Gla0ppj60NeuBXXi-1"
+      >
+        <div class="project" data-aos="fade-up">
+          <div
+            class="project-img"
+            style="background-image: url('pics/kronos.jpg')"
+          ></div>
+          <div class="project-text">
+            <span>Figma Project</span>
+            <h3>Kronos luxury watch e-shop</h3>
+          </div>
+          <div class="custom-cursor">OPEN PROJECT</div>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </div>
+
+<style>
+  /* Custom tooltip style */
+  .custom-cursor {
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid white;
+    font-size: 1.15rem;
+    white-space: nowrap;
+    pointer-events: none;
+    display: none;
+    z-index: 1000;
+  }
+
+  .project-link:hover {
+    cursor: none;
+  }
+
+  .project-container {
+    position: relative;
+  }
+</style>
+
+<script>
+  document.querySelectorAll(".project-link").forEach((link) => {
+    const customCursor = link.querySelector(".custom-cursor");
+
+    link.addEventListener("mouseover", () => {
+      customCursor.style.display = "block";
+    });
+
+    link.addEventListener("mousemove", (e) => {
+      // Adjust the position relative to the parent element
+      const rect = link.getBoundingClientRect();
+      customCursor.style.left = e.clientX - rect.left + "px";
+      customCursor.style.top = e.clientY - rect.top + "px";
+    });
+
+    link.addEventListener("mouseout", () => {
+      customCursor.style.display = "none";
+    });
+  });
+</script>
