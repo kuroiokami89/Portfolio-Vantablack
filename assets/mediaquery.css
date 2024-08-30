@@ -18,9 +18,12 @@
     padding: 0 5%;
   }
 
-  .email,
   #p-name {
-    font-size: 11rem !important;
+    font-size: 9rem !important;
+  }
+
+  .email {
+    font-size: 5.5rem !important;
   }
 
   #works {
