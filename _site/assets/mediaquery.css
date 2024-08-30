@@ -206,10 +206,15 @@
 
   #about {
     flex-direction: column;
+    gap: 50px;
   }
 
   #about img {
     width: 100%;
+  }
+
+  #intro {
+    background-position: center;
   }
 
   #intro p {
