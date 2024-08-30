@@ -131,12 +131,7 @@
     });
   });
 </script>
- <div
-  id="intro"
-  class="blocco"
-  data-aos="fade-up"
-  style="background-image: url('pics/intro-background-1-1.png')"
->
+ <div id="intro" class="blocco" data-aos="fade-up">
   <div class="intro-container">
     <p id="p-name">
       Sergio <br />
@@ -269,64 +264,23 @@
     websites that provide a great user experience. <br />
   </div>
 </div>
- <footer id="footer" class="">
-  <div class="section-title" style="position: relative">
-    <a href="mailto:sergioallushaj@gmail.com" id="emailLink" class="email">
-      LET'S TALK
+ <footer id="footer" class="blocco">
+  <a href="mailto:sergioallushaj@gmail.com" id="emailLink" class="email">
+    sergioallushaj@gmail.com
+  </a>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/sergio-allushaj-a92b9717a/">
+      LINKEDIN
     </a>
-    <div id="customCursor" class="custom-cursor">SEND EMAIL</div>
-  </div>
-  <div class="line"></div>
-  <div class="footer-socials">
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/sergio-allushaj-a92b9717a/">
-        LINKEDIN
-      </a>
-      <a href="https://github.com/kuroiokami89"> GITHUB </a>
-      <a href="assets/ALLUSHAJ SERGIO CV 2024.pdf"> DOWNLOAD.CV </a>
-    </div>
+    <a class="link" href="https://github.com/kuroiokami89"> GITHUB </a>
+    <a class="link" href="assets/CV ALLUSHAJ SERGIO (ITA).pdf">
+      DOWNLOAD.CV ITA
+    </a>
+    <a class="link" href="assets/ALLUSHAJ SERGIO CV 2024.pdf">
+      DOWNLOAD.CV ENG
+    </a>
   </div>
 </footer>
-
-<style>
-  /* Custom tooltip style */
-  .custom-cursor {
-    position: absolute;
-    background-color: white;
-    color: black;
-    padding: 5px 10px;
-    border: 1px solid white;
-    font-size: 1.15rem;
-    white-space: nowrap;
-    pointer-events: none;
-    display: none;
-    z-index: 1000;
-  }
-
-  #emailLink:hover {
-    cursor: none;
-  }
-</style>
-
-<script>
-  const link = document.getElementById("emailLink");
-  const customCursor = document.getElementById("customCursor");
-
-  link.addEventListener("mouseover", () => {
-    customCursor.style.display = "block";
-  });
-
-  link.addEventListener("mousemove", (e) => {
-    // Adjust the position relative to the parent element
-    const rect = link.getBoundingClientRect();
-    customCursor.style.left = e.clientX - rect.left + "px";
-    customCursor.style.top = e.clientY - rect.top + "px";
-  });
-
-  link.addEventListener("mouseout", () => {
-    customCursor.style.display = "none";
-  });
-</script>
 
     </div>
 

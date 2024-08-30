@@ -160,28 +160,10 @@
   }
 
   #footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0;
-    height: 100vh !important;
-    font-size: 0.9rem !important;
-  }
-
-  .footer-socials p {
-    font-size: 0.9rem !important;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    gap: 50px;
     align-items: center;
-  }
-
-  .footer-socials {
-    flex-direction: column;
-    align-items: center;
-    row-gap: 30px;
+    text-align: center;
+    height: 100vh;
+    margin-bottom: 0 !important;
   }
 
   #projects {
@@ -197,7 +179,7 @@
   }
 
   .email {
-    font-size: 5rem !important;
+    font-size: 1.5rem !important;
   }
 
   #intro span {
@@ -223,7 +205,4 @@
 }
 
 @media screen and (max-width: 480px) {
-  #footer {
-    height: 100vh !important;
-  }
 }
