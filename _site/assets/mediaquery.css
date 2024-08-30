@@ -14,9 +14,9 @@
 }
 
 @media screen and (max-width: 1450px) {
-  .blocco {
+  /* .blocco {
     padding: 0 5%;
-  }
+  } */
 
   #p-name {
     font-size: 9rem !important;
@@ -47,6 +47,10 @@
 
   .work-exp p {
     margin-right: 200px;
+  }
+
+  #footer {
+    margin-bottom: 100px !important;
   }
 }
 
